@@ -32,12 +32,12 @@
             this.lblDias = new System.Windows.Forms.Label();
             this.lblDistancia = new System.Windows.Forms.Label();
             this.mrcCosto = new System.Windows.Forms.GroupBox();
+            this.lblTotalF = new System.Windows.Forms.Label();
+            this.lblPrecioF = new System.Windows.Forms.Label();
+            this.lblTotal = new System.Windows.Forms.Label();
+            this.lblPrecio = new System.Windows.Forms.Label();
             this.nudDias = new System.Windows.Forms.NumericUpDown();
             this.txtDistancia = new System.Windows.Forms.TextBox();
-            this.lblPrecio = new System.Windows.Forms.Label();
-            this.lblTotal = new System.Windows.Forms.Label();
-            this.lblPrecioF = new System.Windows.Forms.Label();
-            this.lblTotalF = new System.Windows.Forms.Label();
             this.mrcCosto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudDias)).BeginInit();
             this.SuspendLayout();
@@ -82,6 +82,40 @@
             this.mrcCosto.TabStop = false;
             this.mrcCosto.Text = "Costo";
             // 
+            // lblTotalF
+            // 
+            this.lblTotalF.AutoSize = true;
+            this.lblTotalF.Location = new System.Drawing.Point(100, 97);
+            this.lblTotalF.Name = "lblTotalF";
+            this.lblTotalF.Size = new System.Drawing.Size(0, 16);
+            this.lblTotalF.TabIndex = 3;
+            // 
+            // lblPrecioF
+            // 
+            this.lblPrecioF.AutoSize = true;
+            this.lblPrecioF.Location = new System.Drawing.Point(108, 39);
+            this.lblPrecioF.Name = "lblPrecioF";
+            this.lblPrecioF.Size = new System.Drawing.Size(0, 16);
+            this.lblPrecioF.TabIndex = 2;
+            // 
+            // lblTotal
+            // 
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Location = new System.Drawing.Point(34, 98);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(44, 16);
+            this.lblTotal.TabIndex = 1;
+            this.lblTotal.Text = "Total :";
+            // 
+            // lblPrecio
+            // 
+            this.lblPrecio.AutoSize = true;
+            this.lblPrecio.Location = new System.Drawing.Point(34, 37);
+            this.lblPrecio.Name = "lblPrecio";
+            this.lblPrecio.Size = new System.Drawing.Size(55, 16);
+            this.lblPrecio.TabIndex = 0;
+            this.lblPrecio.Text = "Precio : ";
+            // 
             // nudDias
             // 
             this.nudDias.Location = new System.Drawing.Point(154, 79);
@@ -112,42 +146,6 @@
             this.txtDistancia.TabIndex = 5;
             this.txtDistancia.TextChanged += new System.EventHandler(this.txtDistancia_TextChanged);
             this.txtDistancia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDistancia_KeyPress);
-            // 
-            // lblPrecio
-            // 
-            this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Location = new System.Drawing.Point(34, 37);
-            this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(55, 16);
-            this.lblPrecio.TabIndex = 0;
-            this.lblPrecio.Text = "Precio : ";
-            // 
-            // lblTotal
-            // 
-            this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(34, 98);
-            this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(44, 16);
-            this.lblTotal.TabIndex = 1;
-            this.lblTotal.Text = "Total :";
-            // 
-            // lblPrecioF
-            // 
-            this.lblPrecioF.AutoSize = true;
-            this.lblPrecioF.Location = new System.Drawing.Point(108, 39);
-            this.lblPrecioF.Name = "lblPrecioF";
-            this.lblPrecioF.Size = new System.Drawing.Size(44, 16);
-            this.lblPrecioF.TabIndex = 2;
-            this.lblPrecioF.Text = "label6";
-            // 
-            // lblTotalF
-            // 
-            this.lblTotalF.AutoSize = true;
-            this.lblTotalF.Location = new System.Drawing.Point(100, 97);
-            this.lblTotalF.Name = "lblTotalF";
-            this.lblTotalF.Size = new System.Drawing.Size(44, 16);
-            this.lblTotalF.TabIndex = 3;
-            this.lblTotalF.Text = "label7";
             // 
             // frmFerroc
             // 

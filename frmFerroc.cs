@@ -12,7 +12,7 @@ namespace pryArmaniniFerrocarrilSP2
 {
     public partial class frmFerroc : Form
     {
-
+       
         public frmFerroc()
         {
             InitializeComponent();
@@ -28,6 +28,28 @@ namespace pryArmaniniFerrocarrilSP2
             vDistancia = int.Parse(txtDistancia.Text);
 
             vSumaTotal = vDistancia * 5;
+
+            string ComprueboDistancia = txtDistancia.Text.Trim();
+            if (ComprueboDistancia.Length > 0)
+            {
+                int distancia = Convert.ToInt32(txtDistancia.Text);
+                if (distancia > 0)
+                {
+                    if (Convert.ToInt32(nudDias.Value) >= 7 && distancia>=100)
+                    {
+                        lblPrecio.Text = Convert.ToString(2.50 * distancia);
+                        lblTotal.Text = "$ 2.5";
+                    }
+                    else
+                    {
+                        lblPrecio.Text = Convert.ToString(5 * distancia);
+                        lblTotal.Text = "$ 5";
+                    }
+                }
+            }
+
+
+
 
 
             //if (vDias <= 7 && vDistancia >= 100)
