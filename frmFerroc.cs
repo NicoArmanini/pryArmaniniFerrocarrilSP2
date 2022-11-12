@@ -44,6 +44,7 @@ namespace pryArmaniniFerrocarrilSP2
                     {
                         lblPrecio.Text = Convert.ToString(5 * distancia);
                         lblTotal.Text = "$ 5";
+
                     }
                 }
             }
