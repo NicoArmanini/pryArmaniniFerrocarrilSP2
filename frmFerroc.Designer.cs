@@ -156,18 +156,18 @@
             this.lblPrecio1.AutoSize = true;
             this.lblPrecio1.Location = new System.Drawing.Point(95, 37);
             this.lblPrecio1.Name = "lblPrecio1";
-            this.lblPrecio1.Size = new System.Drawing.Size(44, 16);
+            this.lblPrecio1.Size = new System.Drawing.Size(10, 16);
             this.lblPrecio1.TabIndex = 4;
-            this.lblPrecio1.Text = "label1";
+            this.lblPrecio1.Text = ".";
             // 
             // lblTotal1
             // 
             this.lblTotal1.AutoSize = true;
             this.lblTotal1.Location = new System.Drawing.Point(95, 97);
             this.lblTotal1.Name = "lblTotal1";
-            this.lblTotal1.Size = new System.Drawing.Size(44, 16);
+            this.lblTotal1.Size = new System.Drawing.Size(10, 16);
             this.lblTotal1.TabIndex = 4;
-            this.lblTotal1.Text = "label1";
+            this.lblTotal1.Text = ".";
             // 
             // frmFerroc
             // 
