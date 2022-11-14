@@ -42,13 +42,13 @@ namespace pryArmaniniFerrocarrilSP2
                 {
                     if (Convert.ToInt32(nudDias.Value) >= 7 && distancia >= 100)
                     {
-                        lblPrecio1.Text = Convert.ToString(2.50 * distancia);
-                        lblTotal1.Text = "$ 2.5";
+                        lblTotal1.Text = Convert.ToString(2.50 * distancia);
+                        lblPrecio1.Text = "$ 2.5";
                     }
                     else
                     {
-                        lblPrecio1.Text = Convert.ToString(5 * distancia);
-                        lblTotal1.Text = "$ 5";
+                        lblTotal1.Text = Convert.ToString(5 * distancia);
+                        lblPrecio1.Text = "$ 5";
                         
                     }
                 }

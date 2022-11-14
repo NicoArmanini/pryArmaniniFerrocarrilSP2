@@ -28,18 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFerroc));
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblDias = new System.Windows.Forms.Label();
             this.lblDistancia = new System.Windows.Forms.Label();
             this.mrcCosto = new System.Windows.Forms.GroupBox();
+            this.lblTotal1 = new System.Windows.Forms.Label();
+            this.lblPrecio1 = new System.Windows.Forms.Label();
             this.lblTotalF = new System.Windows.Forms.Label();
             this.lblPrecioF = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
             this.lblPrecio = new System.Windows.Forms.Label();
             this.nudDias = new System.Windows.Forms.NumericUpDown();
             this.txtDistancia = new System.Windows.Forms.TextBox();
-            this.lblPrecio1 = new System.Windows.Forms.Label();
-            this.lblTotal1 = new System.Windows.Forms.Label();
             this.mrcCosto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudDias)).BeginInit();
             this.SuspendLayout();
@@ -73,25 +74,46 @@
             // 
             // mrcCosto
             // 
+            this.mrcCosto.BackColor = System.Drawing.Color.Transparent;
             this.mrcCosto.Controls.Add(this.lblTotal1);
             this.mrcCosto.Controls.Add(this.lblPrecio1);
             this.mrcCosto.Controls.Add(this.lblTotalF);
             this.mrcCosto.Controls.Add(this.lblPrecioF);
             this.mrcCosto.Controls.Add(this.lblTotal);
             this.mrcCosto.Controls.Add(this.lblPrecio);
+            this.mrcCosto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mrcCosto.ForeColor = System.Drawing.SystemColors.ControlText;
             this.mrcCosto.Location = new System.Drawing.Point(36, 206);
             this.mrcCosto.Name = "mrcCosto";
-            this.mrcCosto.Size = new System.Drawing.Size(397, 160);
+            this.mrcCosto.Size = new System.Drawing.Size(397, 140);
             this.mrcCosto.TabIndex = 3;
             this.mrcCosto.TabStop = false;
             this.mrcCosto.Text = "Costo";
+            // 
+            // lblTotal1
+            // 
+            this.lblTotal1.AutoSize = true;
+            this.lblTotal1.Location = new System.Drawing.Point(95, 97);
+            this.lblTotal1.Name = "lblTotal1";
+            this.lblTotal1.Size = new System.Drawing.Size(14, 20);
+            this.lblTotal1.TabIndex = 4;
+            this.lblTotal1.Text = ".";
+            // 
+            // lblPrecio1
+            // 
+            this.lblPrecio1.AutoSize = true;
+            this.lblPrecio1.Location = new System.Drawing.Point(95, 37);
+            this.lblPrecio1.Name = "lblPrecio1";
+            this.lblPrecio1.Size = new System.Drawing.Size(14, 20);
+            this.lblPrecio1.TabIndex = 4;
+            this.lblPrecio1.Text = ".";
             // 
             // lblTotalF
             // 
             this.lblTotalF.AutoSize = true;
             this.lblTotalF.Location = new System.Drawing.Point(100, 97);
             this.lblTotalF.Name = "lblTotalF";
-            this.lblTotalF.Size = new System.Drawing.Size(0, 16);
+            this.lblTotalF.Size = new System.Drawing.Size(0, 20);
             this.lblTotalF.TabIndex = 3;
             // 
             // lblPrecioF
@@ -99,7 +121,7 @@
             this.lblPrecioF.AutoSize = true;
             this.lblPrecioF.Location = new System.Drawing.Point(108, 39);
             this.lblPrecioF.Name = "lblPrecioF";
-            this.lblPrecioF.Size = new System.Drawing.Size(0, 16);
+            this.lblPrecioF.Size = new System.Drawing.Size(0, 20);
             this.lblPrecioF.TabIndex = 2;
             // 
             // lblTotal
@@ -107,7 +129,7 @@
             this.lblTotal.AutoSize = true;
             this.lblTotal.Location = new System.Drawing.Point(34, 98);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(44, 16);
+            this.lblTotal.Size = new System.Drawing.Size(63, 20);
             this.lblTotal.TabIndex = 1;
             this.lblTotal.Text = "Total :";
             // 
@@ -116,7 +138,7 @@
             this.lblPrecio.AutoSize = true;
             this.lblPrecio.Location = new System.Drawing.Point(34, 37);
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(55, 16);
+            this.lblPrecio.Size = new System.Drawing.Size(81, 20);
             this.lblPrecio.TabIndex = 0;
             this.lblPrecio.Text = "Precio : ";
             // 
@@ -151,28 +173,11 @@
             this.txtDistancia.TextChanged += new System.EventHandler(this.txtDistancia_TextChanged);
             this.txtDistancia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDistancia_KeyPress);
             // 
-            // lblPrecio1
-            // 
-            this.lblPrecio1.AutoSize = true;
-            this.lblPrecio1.Location = new System.Drawing.Point(95, 37);
-            this.lblPrecio1.Name = "lblPrecio1";
-            this.lblPrecio1.Size = new System.Drawing.Size(10, 16);
-            this.lblPrecio1.TabIndex = 4;
-            this.lblPrecio1.Text = ".";
-            // 
-            // lblTotal1
-            // 
-            this.lblTotal1.AutoSize = true;
-            this.lblTotal1.Location = new System.Drawing.Point(95, 97);
-            this.lblTotal1.Name = "lblTotal1";
-            this.lblTotal1.Size = new System.Drawing.Size(10, 16);
-            this.lblTotal1.TabIndex = 4;
-            this.lblTotal1.Text = ".";
-            // 
             // frmFerroc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(219)))), ((int)(((byte)(170)))));
             this.ClientSize = new System.Drawing.Size(472, 435);
             this.Controls.Add(this.txtDistancia);
             this.Controls.Add(this.nudDias);
@@ -180,6 +185,7 @@
             this.Controls.Add(this.lblDistancia);
             this.Controls.Add(this.lblDias);
             this.Controls.Add(this.lblTitulo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmFerroc";
             this.Text = "Ferrocarril - Calculo";
             this.mrcCosto.ResumeLayout(false);
