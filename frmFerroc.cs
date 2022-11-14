@@ -20,49 +20,44 @@ namespace pryArmaniniFerrocarrilSP2
 
         private void txtDistancia_TextChanged(object sender, EventArgs e)
         {
-            int vDias = 1;
-            int vDistancia = 1;
-            int vSumaTotal = 0;
+            //int vDias = 1;
+            //int vDistancia = 1;
+            //int vSumaTotal = 0;
 
-            vDias = int.Parse(nudDias.Text);
-            vDistancia = int.Parse(txtDistancia.Text);
+            //vDias = int.Parse(nudDias.Text);
+            //vDistancia = int.Parse(txtDistancia.Text);
 
-            vSumaTotal = vDistancia * 5;
+
+            //vSumaTotal = vDistancia * 5;
 
             string ComprueboDistancia = txtDistancia.Text.Trim();
+
+
             if (ComprueboDistancia.Length > 0)
             {
                 int distancia = Convert.ToInt32(txtDistancia.Text);
+
                 if (distancia > 0)
                 {
-                    if (Convert.ToInt32(nudDias.Value) >= 7 && distancia>=100)
+                    if (Convert.ToInt32(nudDias.Value) >= 7 && distancia >= 100)
                     {
-                        lblPrecio.Text = Convert.ToString(2.50 * distancia);
-                        lblTotal.Text = "$ 2.5";
+                        lblPrecio1.Text = Convert.ToString(2.50 * distancia);
+                        lblTotal1.Text = "$ 2.5";
                     }
                     else
                     {
-                        lblPrecio.Text = Convert.ToString(5 * distancia);
-                        lblTotal.Text = "$ 5";
+                        lblPrecio1.Text = Convert.ToString(5 * distancia);
+                        lblTotal1.Text = "$ 5";
 
                     }
                 }
+                else
+                {
+                    MessageBox.Show("Ingresar distancia", "Atencion",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
 
-
-
-
-
-            //if (vDias <= 7 && vDistancia >= 100)
-            //{
-            //    vSumaTotal = (vSumaTotal * 50) / 100;
-
-            //    lblPrecioF.Text = "CONTROLE LA CANTIDAD" +
-            //       "DE CADA PRODUCTO, la suma debe dar 100" +
-            //       "Tu calculo resulta en : " + vSumaTotal;
-            //    //cambiar el color de la fuente por rojo
-            //    lblPrecioF.ForeColor = Color.Red;
-            //}
 
         }
 

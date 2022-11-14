@@ -38,6 +38,8 @@
             this.lblPrecio = new System.Windows.Forms.Label();
             this.nudDias = new System.Windows.Forms.NumericUpDown();
             this.txtDistancia = new System.Windows.Forms.TextBox();
+            this.lblPrecio1 = new System.Windows.Forms.Label();
+            this.lblTotal1 = new System.Windows.Forms.Label();
             this.mrcCosto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudDias)).BeginInit();
             this.SuspendLayout();
@@ -71,6 +73,8 @@
             // 
             // mrcCosto
             // 
+            this.mrcCosto.Controls.Add(this.lblTotal1);
+            this.mrcCosto.Controls.Add(this.lblPrecio1);
             this.mrcCosto.Controls.Add(this.lblTotalF);
             this.mrcCosto.Controls.Add(this.lblPrecioF);
             this.mrcCosto.Controls.Add(this.lblTotal);
@@ -147,6 +151,24 @@
             this.txtDistancia.TextChanged += new System.EventHandler(this.txtDistancia_TextChanged);
             this.txtDistancia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDistancia_KeyPress);
             // 
+            // lblPrecio1
+            // 
+            this.lblPrecio1.AutoSize = true;
+            this.lblPrecio1.Location = new System.Drawing.Point(95, 37);
+            this.lblPrecio1.Name = "lblPrecio1";
+            this.lblPrecio1.Size = new System.Drawing.Size(44, 16);
+            this.lblPrecio1.TabIndex = 4;
+            this.lblPrecio1.Text = "label1";
+            // 
+            // lblTotal1
+            // 
+            this.lblTotal1.AutoSize = true;
+            this.lblTotal1.Location = new System.Drawing.Point(95, 97);
+            this.lblTotal1.Name = "lblTotal1";
+            this.lblTotal1.Size = new System.Drawing.Size(44, 16);
+            this.lblTotal1.TabIndex = 4;
+            this.lblTotal1.Text = "label1";
+            // 
             // frmFerroc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -180,6 +202,8 @@
         private System.Windows.Forms.Label lblPrecio;
         private System.Windows.Forms.NumericUpDown nudDias;
         private System.Windows.Forms.TextBox txtDistancia;
+        private System.Windows.Forms.Label lblTotal1;
+        private System.Windows.Forms.Label lblPrecio1;
     }
 }
 
